@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,300;1,600;1,800;1,900&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1000;
+    
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+}
+.logo{
+    font-size: 25px;
+    color: #ffffffb3;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    padding: 2.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo:hover{
+
+    color: #ffffff;
+
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar  ul li a,.bi-bag {
+    font-size: 1.125rem;
+    padding: 2.25rem;
+    font-weight: 600;
+    color: #ffffffb3;
+    display: block;
+}
+
+.bi-bag{
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.menu .navbar  ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.conteiner-cart-products{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+
+    width: 400px;
+    z-index: 5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.292);
+    /* border-radius: 10px; */
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+.cart-total{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-total h3{
+    font-size: 20px ;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.info-cart-product{
+    display: flex;
+    flex: 0.8;
+    justify-content: space-between;
+}
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+
+
+
+.swiper{
+
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.swiper-slide{
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0.504)),url(imgCafe/pexels-jason-villanueva-851555.jpg);
+    background-attachment: fixed;
+}
+
+
+.img-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(imgCafe/nathan-dumlao-vbt-Fp3b5FA-unsplash.jpg);
+    transform: rotate(30deg);
+    background-attachment: fixed;
+}
+
+
+.img-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(imgCafe/pexels-suzy-hazelwood-1126359.jpg);
+    background-attachment: fixed;
+}
+
+
+.img-4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),url(imgCafe/pexels-lisa-fotios-907142.jpg);
+    background-attachment: fixed;
+}
+
+
+.swiper-button-prev,.swiper-button-next{
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.192);
+}
+
+.slider-content,.slider-title{
+    margin: 20px;
+
+}
+i{
+    cursor: pointer;
+}
+.slider-title{
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    border-bottom: #fff solid .5px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.slider-content{
+    position: absolute;
+    font-size: 1.5rem;
+    left: 40%;
+    top: 50%;
+    transform: translateX(-30%);
+    color: #ffffff80;
+}
+
+
+
+
+/*
+CAFES-TE-JUGOS SECTION
+*/
+.cafes{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 248, 239);
+}
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Mantenemos 4 columnas */
+  grid-template-rows: repeat(2, auto); /* Mantenemos 2 filas */
+  grid-gap: 20px; /* Espacio entre elementos */
+  justify-content: center; /* Centrar elementos en el grid */
+}
+
+.btn-bebidas{   
+    display: flex;
+    justify-content: center;
+}
+img{
+ height: 30vh;
+
+}
+   
+
+.h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+.btn-bebidas1,.btn-bebidas2 ,.btn-bebidas3 {
+    padding: 15px 30px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(179, 143, 92);
+}
+
+.btn-bebidas1:hover ,.btn-bebidas2:hover  ,.btn-bebidas3:hover  {
+    background-color: rgb(240, 205, 157);
+}
+
+
+.cardCafe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    min-height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.stars{
+    text-align: center;
+    color: #f1bb74;
+    
+}
+.cardCafe img{
+    max-height: 200px; /* Altura máxima para las imágenes */
+  object-fit: cover; /* Ajuste de la imagen */
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    
+}
+
+.btn4{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(179, 143, 92);
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.btn4:hover{
+    background-color: rgb(230, 184, 120);
+}
+
+
+.rojo{
+    color: red;
+}
+
+.amarillo{
+    color: rgb(255, 230, 42);
+}
+.cardCafe .descuento{
+    position: relative;
+    text-align: center;
+    left: 0;
+    margin: 20px;
+    padding: 5px;
+    width: 18%;
+    border-radius: 15px;
+    color: #fff ;
+    background-color: rgb(179, 143, 92);
+}
+
+.hoverData{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 130px;
+    width: 20px;
+    top: -340px;
+    z-index: -1;
+    transform: translateX(3%);
+    transition: .4s all ease;
+}
+
+.cardCafe:hover .hoverData{
+    z-index: 54;
+    transition: 1s;
+}
+
+.cardCafe:hover .descuento{
+    background-color: #000;
+    color: #fff;
+}
+.te{
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 248, 239);
+}
+
+.jugos{
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 248, 239);
+}
+
+.activado{
+    display: block;
+}
+
+.descativado{
+    display: none;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .menu .navbar ul {
+      display: none; /* Oculta la lista del menú principal */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #333; /* Color de fondo del menú hamburguesa */
+      z-index: 999; /* Asegura que esté por encima del contenido */
+      flex-direction: column; /* Alinear elementos en columna */
+      justify-content: center; /* Centrar verticalmente */
+      align-items: center; /* Centrar horizontalmente */
+      padding-top: 80px; /* Espaciado superior para evitar el área del encabezado */
+    }
+  
+    .menu .navbar ul li {
+      margin-bottom: 20px; /* Espaciado entre elementos del menú */
+    }
+  
+    .menu .navbar ul li a {
+      color: #fff; /* Color de texto del menú hamburguesa */
+      font-size: 1.5rem;
+    }
+  
+    .menu .navbar .menu-icon {
+      display: block; /* Asegura que el icono de hamburguesa sea visible */
+      font-size: 2rem;
+      color: #ffffffb3; /* Color del icono de hamburguesa */
+      padding: 2.25rem;
+      cursor: pointer;
+    }
+  
+    .menu .navbar .menu-icon:hover {
+      color: #ffffff; /* Color al pasar el mouse sobre el icono */
+    }
+  }
+
+
+  @media screen and (max-width: 1600px) {
+    .bebidas {
+      grid-template-columns: repeat(3, 1fr); /* Cambiamos a 2 columnas en pantallas más pequeñas */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .bebidas {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas aún más pequeñas */
+    }
+  }
+
+  
+
+  @media screen and (max-width: 1225px) {
+    .bebidas {
+      grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas en pantallas más pequeñas */
+      gap: 15px;
+     
+    }
+
+    .cardCafe{
+        width: 450px;
+        margin: 0;
+    }
+  }
+  
+
+@media screen and (max-width: 965px) {
+  .bebidas {
+    grid-template-columns: repeat(1, 1fr); /* Una sola columna en pantallas más pequeñas */
+    gap: 15px;
+  }
+
+  .cardCafe {
+    width: 90%; /* Ancho del 90% del contenedor */
+    max-width: 450px; /* Ancho máximo */
+    margin: 0 auto; /* Márgenes automáticos para centrar */
+}
+
+/* Estilos para centrar el contenido al medio de la página */
+.container-items {
+  max-width: 1200px; /* Ancho máximo del contenedor principal */
+  margin: 0 auto; /* Márgenes automáticos para centrar */
+}
+  }
+
+  

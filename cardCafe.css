@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(255, 248, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardCafe{
+    width: 300px;
+    min-height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.stars{
+    text-align: center;
+    color: #f1bb74;
+}
+img{
+    width: 100%;
+    align-items: center;
+    
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+}
+.botones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px;
+}
+.btn4{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(179, 143, 92);
+    color: #fff;
+}
+
+
+.bi-heart-fill:active{
+    color: red;
+}
+
+.cardCafe .descuento{
+    position: relative;
+    left: 0;
+    margin: 20px;
+    padding: 5px;
+    width: 15%;
+    border-radius: 15px;
+    color: #fff ;
+    background-color: rgb(179, 143, 92);
+}
+
+.hoverData{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 50%;
+    left: 280px;
+    top: -340px;
+    z-index: -1;
+    transform: translateX(-3%);
+    transition: .4s all ease;
+}
+
+.cardCafe:hover .hoverData{
+    z-index: 54;
+    transition: 1s;
+}
